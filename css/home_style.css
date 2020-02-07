@@ -1,0 +1,79 @@
+			body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+			.w3-bar-block .w3-bar-item {padding:20px}
+			.header {
+				padding: 30px;
+				text-align: center;
+			}
+			.container {
+				color : black;
+				position: relative;
+				width: 50%;
+			}
+			.image {
+				opacity: 1;
+				display: block;
+				width: 100%;
+				height: auto;
+				transition: .5s ease;
+				backface-visibility: hidden;
+			}
+			.container:hover .image {
+				opacity: 0.3;
+			}
+			.container:hover .middle {
+				opacity: 1;
+			}
+			
+			/* LOGIN */
+			body {font-family: Arial, Helvetica, sans-serif;}
+
+			/* Full-width input fields */
+			input[type=text], input[type=password] {
+			  	width: 100%;
+			  	padding: 12px 20px;
+			  	margin: 8px 0;
+			  	display: inline-block;
+			  	border: 1px solid #ccc;
+			  	box-sizing: border-box;
+			}
+			/* Set a style for all buttons */
+			button {
+			  	background-color: #1bc221;
+			  	color: white;
+			  	padding: 14px 20px;
+			  	margin: 8px 0;
+			  	border: none;
+			  	cursor: pointer;
+			  	width: 100%;
+			}
+			img.avatar {
+			  	width: 40%;
+			  	border-radius: 50%;
+			}
+			/* The Modal (background) */
+			.modal {
+			  	z-index: 1; /* Sit on top */
+			  	width: 100%; /* Full width */
+			  	height: 200%; /* Full height */
+			}
+			/* Modal Content/Box */
+			.modal-content {
+			  	background-color: #fefefe;
+			  	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+			  	border: 1px solid #888;
+			  	width: 80%; /* Could be more or less, depending on screen size */
+			}
+			/* The Close Button (x) */
+			.close {
+				position: absolute;
+				right: 25px;
+			 	top: 0;
+			  	color: #000;
+			  	font-size: 35px;
+			  	font-weight: bold;
+			}
+			/* Add Zoom Animation */
+			.animate {
+				-webkit-animation: animatezoom 0.6s;
+				animation: animatezoom 0.6s
+			}

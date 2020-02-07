@@ -1,0 +1,53 @@
+=============CATATAN UNTUK CODING SESSION===============
+
+
+<?php
+	session_start();
+	//Mengecek sesion-----------
+	if(!isset($_SESSION['username'])){
+		header("location: index.php");
+	}
+
+index.html / home.php
+?>
+==================================
+di index gada session
+
+
+peminjaman.php
+<?php
+	session_start();
+	include("crudBarang.php");
+	include("crudPinjam.php");
+	
+	//Mengambil data dari tabel Pinjam untuk ditampilkan ke tabel
+	$pinjam = bacaPeminjaman();
+	$nPinjam = count($pinjam);
+	//Mengimport Navigasi Bar
+	if(!isset($_SESSION['username'])){
+		include('navigasi.php'); == login
+	}
+	else {
+		include('navigasi.php');
+		include('navigasi2.php'); === logout
+	}
+=================================
+    <?php
+		include('navigasi.php');
+    ?>
+
+==============================
+
+	//Mengimport Navigasi Bar
+	if(!isset($_SESSION['username'])){
+		include('navigasi.php');
+	}
+	else {
+		include('navigasi.php');
+		include('navigasi2.php');
+	}
+===================================================
+<?php echo $_SESSION['username']; ?> <br><br>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+$tanggalP = $_GET['tanggal'];
